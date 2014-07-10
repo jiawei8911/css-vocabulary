@@ -1,0 +1,108 @@
+.demo {
+	width: 300px;
+	border: 1px solid #ccc;
+	padding: 20px;			
+}
+
+.demo a {
+	float: left;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	width: 20px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	text-align: center;
+	background: #f36;
+	color: green;
+	margin-right: 5px;
+	text-decoration: none;
+}
+
+/*E[attr]*/
+/*选择了div.demo下所有带有id属性的a元素*/
+
+/*单一属性*/
+
+/*.demo a[id] {
+	background: blue; 
+	color:yellow;
+	font-weight:bold;
+}*/
+
+/*多重属性*/
+
+/*.demo a[href][title] {
+	background: yellow; 
+	color:green;
+}*/
+
+/*E[attr = "value"]*/
+
+/*.demo a[id="first"] {
+	background: blue; 
+	color:yellow;
+	font-weight:bold;
+}
+
+
+.demo a[href="http://www.test.com"][title] {
+	background: yellow; 
+	color:green;
+}*/
+
+/*E[attr ~= "value"]*/
+/*div.demo下的a元素的title属性中，只要其属性值中含有"website"这个词就会被选择*/
+
+/*.demo a[title~="website"]{
+	background:orange;
+	color:green;
+}*/
+
+/*E[attr ^= "value"]*/
+/*选择attr属性值以“value”开头的所有元素*/
+
+.
+demo a[href^="ht"]{
+	background:orange;
+	color:green;
+}
+/*.demo a[href^="mailto:"]{
+	background:green;
+	color:orange;
+}*/
+
+/*E[attr $= "value"]*/
+/*选择attr属性值以"value"结尾的所有元素*/
+
+/*.demo a[href$="png"]{
+	background:orange;
+	color:green;
+}*/
+
+/*E[attr *= "value"]*/
+/*选择attr属性值中包含子串"value"的所有元素*/
+
+/*.demo a[title*="site"]{
+	background:black;
+	color:white;
+}*/
+
+
+/*E[attr|="value"]*/
+/*会选择attr属性值等于value或以value-开头的所有元素*/
+
+/*.demo a[lang|="zh"]{
+	background:gray;
+	color:yellow;
+}*/
+
+.clearfix::before,
+.clearfix::after {
+	content: ".";
+	display: block;
+	height: 10px;
+	visibility: hidden;
+	clear: both;
+}

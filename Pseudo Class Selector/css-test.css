@@ -1,0 +1,102 @@
+.demo {
+	width: 350px;
+	border: 1px solid #ccc;
+	padding: 20px;			
+}
+.demo li {
+	border: 1px solid #ccc;
+	padding: 2px;
+	float: left;
+	margin-right:4px;
+	list-style: none;
+}
+
+.demo a 
+{
+	float: left;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	width: 20px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	text-align: center;
+	background: #f36;
+	color: green;
+	text-decoration: none;
+}
+
+.demo a:link {color:gray;}/*链接没有被访问时前景色为灰色*/
+.demo a:visited{color:yellow;}/*链接被访问过后前景色为黄色*/
+.demo a:hover{color:green;}/*鼠标悬浮在链接上时前景色为绿色*/
+.demo a:active{color:blue;}/*鼠标点中激活链接那一下前景色为蓝色*/
+
+/*.demo li:first-child {
+	background: green; 
+	border: 1px dotted blue;
+}*/
+
+/*.demo li:last-child {
+	background: green; 
+	border: 2px dotted blue;
+}*/
+
+/*.demo li:nth-child(3) {
+	background: lime;
+}*/
+
+/*.demo li:nth-child(-n+5) {
+	background: lime;
+}*/ 
+
+/*.demo li:nth-child(4n){
+	background: lime;
+}
+*/
+
+.demo li.even:nth-child(2){
+	background: lime;
+}
+
+/*.demo li:nth-last-child(4) {
+	background: lime;
+}*/
+
+/*.demo li:nth-last-child(2n-1) {
+	background: lime;
+}*/
+
+/*.demo li:nth-of-type(odd) {
+	background-color: lime;
+}*/
+
+/*.demo .line p {background: lime;}*/
+
+/*.demo .line p:only-child {background: red;}*/
+
+p::first-line {font-style: italic; color:red;}
+
+/*p:empty{display: none;}*/
+
+p::first-letter {font-size: 70px;float:left;margin-right:3px;}
+
+.box{
+	background: red;
+	width: 300px;
+	height: 50px;
+}
+
+.box:empty{
+	display: none;
+}
+
+.clearfix::before,
+.clearfix::after {
+	content: ".";
+	display: block;
+	height: 10px;
+	visibility: hidden;
+	clear: both;
+}
+

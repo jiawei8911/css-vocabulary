@@ -1,0 +1,100 @@
+.demo{
+	width: 300px;
+	border: 1px solid #ccc;
+	padding: 20px;			
+}
+
+.clearfix{
+	width: 270px;
+	height: 22px;
+}
+
+li {
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	width: 20px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	text-align: center;
+	background: #f36;
+	color: green;
+	margin-right: 5px;
+	list-style: none;
+}
+
+/*通配符选择器*/
+
+/**{
+	margin: 0;
+	padding: 0
+}
+
+.demo *{
+	border: 1px solid blue;
+}*/
+
+/*元素选择器*/
+
+/*li {
+	background-color: grey;
+	color: orange;
+}*/
+
+/*类选择器*/
+
+/*.important{
+	font-weight: bold;
+	color: yellow;
+}*/
+
+/*id选择器*/
+
+/*#first{
+	background: lime;
+	color: #000;
+}*/
+
+/*后代选择器*/
+
+/*.demo li {
+	color: blue;
+}*/
+
+/*子元素选择器*/
+
+/*ul > li {
+	background: green;
+	color: yellow;
+}*/
+
+/*相邻兄弟选择器*/
+
+/*li + li {
+	background: green;
+	color: yellow; 
+	border: 1px solid #ccc;
+}*/
+
+
+/*.active + li {
+	background: green;
+	color: yellow; 
+	border: 1px solid #ccc;
+}*/
+
+/*通用兄弟选择器*/
+
+/*.active ~ li {
+	background: green;
+	color: yellow; 
+	border: 1px solid #ccc;
+}*/
+
+/*群组选择器*/
+/*.first, .last {
+	background: green;
+	color: yellow; 
+	border: 1px solid #ccc;
+}*/
